@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+<title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div class="sketch-pad">
+    <div class="title">
+        <h1 id="title1"> Etch A Sketch</h1>
+    </div>
+    <div class='container'></div>
+<div class="buttons">
+    <button class="colorbtn" onclick="changeColor('black')">Black</button>
+    <button class="colorbtn" onclick="changeColor('gray')">Gray</button>
+    <button class="colorbtn" onclick="changeColor('random')">Rainbow</button>
+    <button class="colorbtn" onclick="changeColor('#e0e0e0')">Erase</button>
+    <button class="colorbtn" onclick="resetgird('black')">Reset</button>
+</div>
+<div class="resize">
+    <input
+    type="text"
+    placeholder="set size: 2-100"
+    onchange="changeSize(this.value)">
+    <button class="sizebtn">Resize</button>
+    </div>
+</div>
+    <footer class="footer">
+        Thibault Web Design
+    </footer>
+</body>
+</html>
